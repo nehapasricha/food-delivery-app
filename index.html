@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food delivery App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="section-title">
+        <h2 class="header">
+          Food Delivery App<button class="favourites">
+            <i class="fa fa-heart fa-lg"></i>
+          </button>
+        </h2>
+
+        <div class="filter-container">
+          <form action="" class="myform">
+            <input
+              type="text"
+              name="typeahead"
+              id="typeahead"
+              placeholder="Search for restraunts ...."
+            />
+            <div id="target"></div>
+          </form>
+
+          <div class="filters">
+            <select name="sort" id="sort">
+              <option value="" selected>Sort by</option>
+              <option value="name">Name</option>
+              <option value="ETA">ETA</option>
+              <option value="rating">Rating</option>
+            </select>
+
+            <select name="filter" id="filter">
+              <option value="" selected>Filter by</option>
+              <option value="Italian">Italian</option>
+              <option value="Mexican">Mexican</option>
+              <option value="Chinese">Chinese</option>
+              <option value="French">French</option>
+              <option value="American">American</option>
+              <option value="Sea Food">Sea Food</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="restraunts-center"></div>
+
+        <div id="pagination">
+          <button class="prev">Prev</button>
+          <button class="next">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
